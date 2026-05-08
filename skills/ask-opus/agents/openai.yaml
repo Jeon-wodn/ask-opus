@@ -1,0 +1,6 @@
+interface:
+  display_name: "Ask Opus"
+  short_description: "Claude Opus advisor for Codex decisions"
+  default_prompt: "Use $ask-opus to get an Opus review before I finalize this task."
+policy:
+  allow_implicit_invocation: false
