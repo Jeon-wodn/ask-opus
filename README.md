@@ -18,7 +18,7 @@ Running the entire development session in Claude can burn through usage quickly.
 Paste this into a Codex session:
 
 ```text
-$skill-installer Jeon-wodn/ask-opus skills/ask-opus
+$skill-installer --repo Jeon-wodn/ask-opus --path skills/ask-opus
 ```
 
 Then restart Codex.
