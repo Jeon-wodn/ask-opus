@@ -4,15 +4,11 @@ Bring Opus judgment to Codex.
 
 `ask-opus` is a Codex skill that asks Claude Opus for a focused second opinion from inside a Codex session.
 
-It keeps the main workflow in Codex and calls Opus only when you explicitly invoke `$ask-opus`.
 
 ## Why
+ClaudeCode is useful for project work, but running the entire development session in Claude can burn through usage quickly.
 
-ClaudeCode is useful for project work, and advisor(opus) can help before risky decisions.
-
-Running the entire development session in Claude can burn through usage quickly.
 `ask-opus` lets Codex do the day-to-day work and call Opus only for the parts where stronger judgment is worth the cost.
-
 
 ## Installation
 
