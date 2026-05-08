@@ -13,12 +13,14 @@ Do not call this automatically. This skill can send selected task context, code,
 
 ## Preconditions
 
-Before calling, verify:
+Before the first advisor call in a Codex session, verify:
 - `claude` CLI is installed (`claude --version`)
 - Claude Code is authenticated (`claude auth status --text`)
 - the Opus model in `_opus_model` is accessible by running the advisor call
 
 If either condition fails: surface the error to the user, do not proceed.
+
+After `claude --version` and `claude auth status --text` both succeed once, remember that preflight is satisfied for the rest of the current Codex session. Do not rerun those two checks on later `$ask-opus` calls in the same session unless `CLAUDE_OPUS_MODEL` changes or an advisor call fails with a CLI, auth, quota, or model-access error.
 
 ## What Opus Cannot See
 
